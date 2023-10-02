@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #576975;
+}
+
+body {
+    background: #f1f1f1;
+    height: 100vh;
+    width: 100vh;
+}
+
+.mainregister {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftregister {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75); */
+
+.leftregister h1 {
+    color: #576975;
+    font-size: 5vh;
+}
+
+.rightregister {
+    width: 47vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardregister {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #f1f1f1;
+    border-radius: 20px;
+    box-shadow: 0px 0px 45px 15px #576975;
+}
+
+.cardregister h1 {
+    color: #576975;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 7px 0;
+}
+
+input {
+    height: 40px;
+}
+
+.textfield input,
+.textfield select {
+    width: 100%;
+    border: 1px solid #576975;
+    border-radius: 10px;
+    padding: 12px;
+    background: #f1f1f1;
+    color: #576975;
+    font-size: 12pt;
+    box-shadow: 0px 5px 20px #f1f1f1;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield label {
+    color: #576975;
+    margin-bottom: 5px;
+}
+
+.textfield input::placeholder {
+    color: #576975;
+}
+
+.btn-register {
+    width: 100%;
+    margin: 25px;
+    border: 2px solid #576975;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #576975;
+    background: transparent;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #f1f1f1;
+
+}
+
+.left-register-image {
+    width: 450px;
+    height: 450px;
+}
+
+.esqueciSenha {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: 100%;
+}
+
+.cardbuttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardbuttons input,
+.cardbuttons button {
+    padding: 7px;
+    margin: 0;
+    width: 45%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .cardregister h1 {
+        font-size: 25px;
+    }
+
+    input[type='text'],
+    input[type='number'],
+    input[type='email'],
+    input[type='password'],
+    select {
+        height: 28px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        display: flex;
+        align-items: center;
+        height: 120vh;
+    }
+
+    .mainregister {
+        flex-direction: column;
+        height: 180vh;
+    }
+
+    .leftregister {
+        height: 400px;
+        margin-bottom: 65px;
+    }
+
+    .leftregister h1 {
+        text-align: center;
+        height: 800px;
+        font-size: 6vh;
+    }
+
+    .leftregister img {
+        display: none;
+    }
+
+    .rightregister {
+        height: 449px;
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    html {
+        overflow-y: hidden;
+    }
+
+    body {
+        height: 105vh;
+    }
+
+    input {
+        height: 40px;
+    }
+
+    .leftregister {
+        height: 278px;
+    }
+
+    .leftregister h1 {
+        font-size: 4vh;
+    }
+
+    .rightregister {
+        width: 65vw;
+    }
+
+    .cardregister {
+        width: 80%;
+    }
+
+    .btn-register {
+        padding: 0;
+    }
+
+    input[type='text'],
+    input[type='number'],
+    input[type='email'],
+    input[type='password'],
+    select {
+        height: 28px;
+        font-size: 9px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+}
